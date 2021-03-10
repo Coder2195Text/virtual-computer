@@ -4,6 +4,7 @@ import os
 def clear():
 	os.system('clear')
 
-white_list = env.list("PASSWORDS", default=[]) 
-print(white_list)
+USERNAMES = env.list("USERNAMES", default=[]) 
+PASSWORDS = env.list("PASSWORDS", default=[]) 
+
 

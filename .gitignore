@@ -1,1 +1,4 @@
 .env
+documents.db
+poetry.lock
+pyproject.toml

@@ -7,6 +7,8 @@ authors = ["repl.it user <replituser@example.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 envparse = "^0.2.0"
+replit = "^2.0.0"
+rich = "^9.13.0"
 
 [tool.poetry.dev-dependencies]
 

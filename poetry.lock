@@ -1,0 +1,19 @@
+[[package]]
+category = "main"
+description = "Simple environment variable parsing"
+name = "envparse"
+optional = false
+python-versions = "*"
+version = "0.2.0"
+
+[package.extras]
+testing = ["pytest"]
+
+[metadata]
+content-hash = "c70846fdefa154cf24f360cf039d8b526bbf5ce15a3df5384e12faa4c42402f0"
+python-versions = "^3.8"
+
+[metadata.files]
+envparse = [
+    {file = "envparse-0.2.0.tar.gz", hash = "sha256:4f3b9a27bb55d27f124eb4adf006fec05e4588891c9a054a183a112645056eb7"},
+]

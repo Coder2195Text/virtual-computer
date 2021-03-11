@@ -1,9 +1,8 @@
 #begin import
 import time
-import sqlite3
 from rich.console import Console
-from envparse import env
 import os
+from envparse import env
 #end import and begin setup stuff
 
 console = Console()
@@ -11,6 +10,7 @@ console = Console()
 def clear():
 	os.system('clear')
 currentUser = None
+
 USERNAMES = env.list("USERNAMES", default=[]) 
 PASSWORDS = env.list("PASSWORDS", default=[]) 
 
@@ -40,15 +40,14 @@ def startMenu():
 	while (not valid):
 		clear()
 		console.print("[italic purple bold]Please sign in to continue[/italic purple bold]")
-		usernameInput  = input("Username:")
-		passwordInput = input("Password:")
+		usernameInput  = input("Username: ")
+		passwordInput = input("Password: ")
 		detectUserValid(usernameInput, passwordInput)
 		if (not valid):
 			clear()
 			console.print(":no_entry:  [red]Wrong credentials. Try again.[/red] :no_entry:")
 			time.sleep(3)
-	
-	
+
 startMenu()
 
 
